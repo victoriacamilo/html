@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de imagem de fundo</title>
+    <title>fundo fixo</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
+           /* background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
-            background-repeat: no-repeat;
+            background-repeat:repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
 
         }
+        /* shorthand= backgroud color > image> position> repeat> attachment
+
+        o size não funciona por enquanto
+        */
         main{
+            min-width: 400px;
             background-color: white;
             width: 450px;
             padding: 10px;
@@ -38,6 +48,7 @@
         </p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae vero distinctio expedita, aut culpa doloremque quaerat dignissimos quasi nam dicta eaque temporibus illum impedit deleniti voluptatum facere perferendis quas repellendus!
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis veniam velit totam porro vero provident esse reiciendis ipsa in delectus maiores mollitia laboriosam illum odit nam recusandae ratione, id Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium accusantium optio facilis laborum totam natus. Sit tempore provident iure, voluptatibus, maxime impedit suscipit natus assumenda sed porro obcaecati iusto Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, atque nihil, iste officiis incidunt culpa temporibus sequi nulla excepturi quod possimus esse perspiciatis, reiciendis odio minima amet saepe repellendus deserunt!
         </p>
+
     </main>
 </body>
 </html>
