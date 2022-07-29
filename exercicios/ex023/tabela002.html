@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +8,27 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            
         }
         caption{
-            text-align: center;
-            font-size: 25px;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0px;
-            padding: 1px;
-            
-            background-color: rgba(128, 128, 128, 0.619);
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 8px;
+            background-color: #8080809e;
             color: black;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            padding: -1px;
+            top: 0px;
+            background-color: black;
         }
 
         table{
             width: 500px;
             border: 1px solid black;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -38,6 +44,9 @@
         tfoot{
             background-color: black;
             color: white;
+        }
+        tbody> tr:nth-child(2n){
+            background-color: rgba(128, 128, 128, 0.619);
         }
     </style>
 </head>
@@ -180,7 +189,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th scope="row"> total de habitantes</th>
+                <th scope="row"> Total de habitantes</th>
                 <td class="numero">000000</td>
             </tr>
 
